@@ -1,0 +1,7 @@
+
+# Ignore the executable
+/csim-executable
+
+# Ignore entire object directory
+/obj/
+/src-backup/

@@ -1,0 +1,11 @@
+(newcolors "default"
+           (let ((on 680) (off 0))
+             (list "black" off off off)
+             (list "red" on off off)
+             (list "green" off on off)
+             (list "yellow" on on off)
+             (list "blue" off off on)
+             (list "magenta" on off on)
+             (list "cyan" off on on)
+             (list "white" on on on)
+             ))
