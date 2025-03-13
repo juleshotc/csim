@@ -15,8 +15,13 @@ panic (const char *fmt, ...)
 }
 
 void
-epanic (const char *msg)
+epanic (const char *fmt, ...)
 {
-  perror (msg);
+  va_list args;
+  va_start (args, fmt);
+  vfprintf (stderr, fmt, args);
+  va_end (args);
+  
+  perror ("");
   exit (1);
 }

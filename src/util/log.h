@@ -2,6 +2,6 @@
 #define _LOG_H_
 
 /* print log */
-extern void printl (const char *fmt, ...);
+extern void (*printl) (const char *, ...);
 
 #endif /* #ifndef _LOG_H_ */

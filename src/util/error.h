@@ -4,6 +4,6 @@
 /* void warn (const char *msg); */
 /* void error (const char *msg); */
 void panic (const char *fmt, ...);
-void epanic (const char *msg);
+void epanic (const char *fmt, ...);
 
 #endif /* #ifndef ERROR_H*/

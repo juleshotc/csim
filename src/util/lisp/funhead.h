@@ -3,7 +3,7 @@
 
 #include "defs.h" 
 
-extern const OBJECT funs[];
+extern SYMBOL funs[];
 extern const unsigned int funcount;
 
 #endif

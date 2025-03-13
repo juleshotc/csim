@@ -1,0 +1,6 @@
+[printl] lazy-loaded log file
+[repl] Reading new file
+[parse] Read function write from token write
+[parse] Read function >= from token >=
+[parse] Read integer 129 from token 129
+[parse] Read integer 129 from token 129

@@ -2,6 +2,7 @@
 #define _REPL_H_
 
 extern int repl (int (*read) (void),
+                 int (*divider) (int),
                  int (*eval) (const char *),
                  void (*print) (const char *, ...));
 

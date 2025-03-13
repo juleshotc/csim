@@ -2,9 +2,10 @@
 
 #include "../util/fileio.h"
 #include "../util/repl.h"
-#include "../util/lisp/parse.h"
 #include "../util/log.h"
 #include "../util/error.h"
+#include "../util/lisp/parse.h"
+#include "../util/lisp/divider.h"
 
 void
 readrc (void)
@@ -15,7 +16,7 @@ readrc (void)
   if (browse ("r"))
     panic ("[readrc] Failed to find file");
 
-  repl (read, parse, printl);
+  repl (read, tokenrule, parse, printl);
   
   umount ();
 }

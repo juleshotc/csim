@@ -4,10 +4,11 @@
 #include "error.h"
 #include <stdio.h> /* fopen */
 
-static tinydir_dir dir;
-static FILE *file;
 #define NAMEMAX 32
-static char namebuf[NAMEMAX];
+
+static tinydir_dir  dir;
+static FILE        *file;
+static char         namebuf[NAMEMAX];
 
 int
 mount (const char *dirpath)
@@ -37,7 +38,7 @@ browse (const char *mode)
         fclose (file);
       file = fopen (tmpfile.path, mode);
       if (!file)
-        epanic (tmpfile.path);
+        epanic ("[browse] Error opening %s", tmpfile.path);
       int length = snprintf (namebuf, NAMEMAX, "%s", tmpfile.path);
       if (length >= NAMEMAX)
         {
